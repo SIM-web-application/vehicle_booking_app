@@ -6,21 +6,23 @@ const UserSchemal = mongoose.Schema(
             type:String,
             required: true
         },
-        Email:{
+        email:{
             type: String,
             required: true,
+            unique:true
         },
-        Password:{
+        password:{
             type: String,
             required: true
         },
-        Phone_number: {
+        phone_number: {
             type: String,
-            required: true
+            required: true,
+            unique: true
         },
-        Role: {
+        role: {
             type: String,
-            required: true
+            default: 'Customer'
         },
     },
     {timestamps : true}

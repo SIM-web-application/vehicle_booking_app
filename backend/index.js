@@ -1,13 +1,18 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import dayjs from 'dayjs';
 import 'dotenv/config';
+import UsersRoutes from './routes/user.js'
+import VehiclesRoutes from './routes/vehicle.js'
 
 const app = express();
 app.use(express.json());
 app.use(cors())
 
 const port = process.env.PORT || 5000;
+app.use('api/users/', UsersRoutes)
+app.use('api/Vehicles/', VehiclesRoutes)
 
 app.get('/', (req, res) => res.send('Kiểm tra kết nối thành công!'))
 

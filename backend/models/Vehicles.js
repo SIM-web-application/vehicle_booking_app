@@ -2,21 +2,25 @@ import mongoose, { Schema } from "mongoose";
 
 const VehicleSchemal = mongoose.Schema(
     {  
+        vehicle_name:{
+            type: String,
+            required: true
+        },
         // loại xe
-        Vehicle_type:{
+        vehicle_type:{
             type: String,
             required: true
         },
         // biển số xe
-        Lisense_plate: {
+        lisense_plate: {
             type: String,
             required: true
         },
-        Price_per_km:{
+        price_per_km:{
             type: Number,
             required: true
         },
-        User_ID:{
+        user_ID:{
             type: Schema.Types.ObjectId,
             ref: "Users",
             required: true,

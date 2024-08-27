@@ -3,26 +3,26 @@ import Vehicle from "./Vehicles";
 
 const BookingSchemal = mongoose.Schema(
     {
-        User_ID: {
+        user_ID: {
             type: Schema.Types.ObjectId,
             ref: "Users",
             required: true
         },
-        Vehicle_ID: {
+        vehicle_ID: {
             type: Schema.Types.ObjectId,
             ref: "vehicles",
             required: true
         },
-        Pickup_location: {
+        pickup_location: {
             type: String,
             required: true,
         },
-        Dropoff_location:{
+        dropoff_location:{
             type: String,
             required: trusted,
         },
         //"Pending", "Confirmed", "In Progress", "Completed", "Cancelled".
-        Status:{
+        status:{
             type: String,
             default: 'Pending'
         }

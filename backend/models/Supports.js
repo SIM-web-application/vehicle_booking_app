@@ -3,15 +3,15 @@ import mongoose, { Schema } from "mongoose";
 //có thể không cần user Id nhưng hiện tại đang code cần User Id mới được
 const SupportSchemal = mongoose.Schema(
     {
-        User_ID:{
+        user_ID:{
             type: Schema.Types.ObjectId,
             ref: "User"
         },
-        Request_type:{
+        request_type:{
             type: String,
             required: true
         },
-        Request_content: {
+        request_content: {
             type: String,
             required: true
         },

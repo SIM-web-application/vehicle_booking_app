@@ -2,17 +2,17 @@ import mongoose, { Schema } from "mongoose";
 
 const ReviewSchemal = mongoose.Schema(
     {
-        Vehicle_ID: {
+        vehicle_ID: {
             type: Schema.Types.ObjectId,
             ref: "Vehicles",
             required: true
         },
-        Rating:{
+        rating:{
             type: Number,
             min: 1, max: 5,
             required: true
         },
-        Comments:[
+        comments:[
             {
                 user_id:
                     {  type: Schema.Types.ObjectId, 
