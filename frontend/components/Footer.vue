@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="~/public/img/banner.jpg" alt="">
+        <p>footer</p>
     </div>
 </template>
 

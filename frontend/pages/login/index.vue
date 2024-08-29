@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const items = [{
   label: 'Getting Started',
   icon: 'i-heroicons-information-circle',
@@ -31,4 +31,17 @@ const items = [{
 <template>
   <UAccordion :items="items" />
 </template>
+ -->
+<template>
+  <div>
+g
+  </div>
+</template>
 
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
